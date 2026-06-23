@@ -1,0 +1,1680 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; frame-ancestors 'none';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://byprayuda.com/" />
+  <meta property="og:title" content="byprayuda — Jasa Pembuatan Website Semarang" />
+  <meta property="og:description" content="Spesialis company profile, landing page, dan undangan pernikahan digital. Profesional, modern, berkesan. Konsultasi gratis." />
+  <meta property="og:image" content="https://byprayuda.com/og-image.jpg" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:site_name" content="byprayuda" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="byprayuda — Jasa Pembuatan Website Semarang" />
+  <meta name="twitter:description" content="Spesialis company profile, landing page, dan undangan pernikahan digital di Semarang." />
+  <meta name="twitter:image" content="https://byprayuda.com/og-image.jpg" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://byprayuda.com/" />
+  <title>byprayuda — Jasa Pembuatan Website Semarang | Company Profile, Landing Page & Undangan</title>
+  <meta name="description" content="Jasa website profesional di Semarang: company profile, landing page, undangan pernikahan digital. Modern, cepat, berkesan. Konsultasi gratis." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --z-grain: 1000;
+      --z-nav: 900;
+      --z-cursor-ring: 9998;
+      --bg: #080810;
+      --bg2: #0d0d1a;
+      --surface: #111122;
+      --surface2: #161630;
+      --violet: #7c3aed;
+      --violet-bright: #8b5cf6;
+      --violet-glow: #a78bfa;
+      --violet-dim: #4c1d95;
+      --text: #f0eeff;
+      --text-muted: #9090b0;
+      --text-dim: #7878aa;
+      --border: rgba(124, 58, 237, 0.18);
+      --border-subtle: var(--white-alpha-border);
+      --radius: 16px;
+      --radius-sm: 8px;
+      /* Semantic color tokens */
+      --violet-alpha-sm: var(--violet-alpha-sm);
+      --violet-alpha-md: var(--violet-alpha-md);
+      --violet-alpha-border: var(--violet-alpha-border);
+      --violet-alpha-ring: var(--violet-alpha-ring);
+      --violet-alpha-hover: var(--violet-alpha-hover);
+      --white-alpha-xs: var(--white-alpha-xs);
+      --white-alpha-sm: var(--white-alpha-sm);
+      --white-alpha-md: var(--white-alpha-md);
+      --white-alpha-border: var(--white-alpha-border);
+      --white-alpha-lg: var(--white-alpha-lg);
+      --white-alpha-xl: var(--white-alpha-xl);
+      --green-live: var(--green-live);
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      }
+
+    /* Custom cursor ring */
+    .cursor-ring {
+      position: fixed;
+      width: 36px;
+      height: 36px;
+      border: 1.5px solid rgba(139,92,246,0.5);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: var(--z-cursor-ring);
+      transform: translate(-50%, -50%);
+      transition: width 0.35s ease, height 0.35s ease, border-color 0.3s;
+    }
+    body:has(a:hover) .cursor-ring,
+    body:has(button:hover) .cursor-ring { width: 54px; height: 54px; border-color: var(--violet-bright); }
+    @media (hover: none) { .cursor-ring { display: none; } }
+
+    /* Focus visible for keyboard nav */
+    :focus-visible {
+      outline: 2px solid var(--violet-bright);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--violet-bright);
+      outline-offset: 4px;
+    }
+
+    /* Grain overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: var(--z-grain);
+      opacity: 0.6;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: var(--z-nav);
+      padding: 20px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(20px);
+      will-change: transform;
+      background: rgba(8,8,16,0.7);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.03em;
+    }
+    .nav-logo span { color: var(--violet-bright); }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-cta {
+      background: var(--violet);
+      color: #fff !important;
+      padding: 10px 22px;
+      border-radius: 100px;
+      font-size: 0.85rem !important;
+      font-weight: 600 !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--violet-bright) !important; color: #fff !important; }
+
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      width: 700px;
+      height: 700px;
+      background: radial-gradient(ellipse at center, rgba(124,58,237,0.22) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-glow-2 {
+      position: absolute;
+      bottom: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(ellipse at center, rgba(139,92,246,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--violet-alpha-md);
+      border: 1px solid var(--violet-alpha-ring);
+      border-radius: 100px;
+      padding: 8px 18px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--violet-glow);
+      margin-bottom: 36px;
+      animation: fadeUp 0.8s ease both;
+    }
+    .hero-badge-dot {
+      width: 6px; height: 6px;
+      background: var(--green-live);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    .hero-h1 {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 28px;
+      animation: fadeUp 0.8s 0.1s ease both;
+      max-width: 900px;
+    }
+    .hero-h1 em {
+      font-style: italic;
+      color: var(--violet-glow);
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--text-muted);
+      max-width: 520px;
+      line-height: 1.7;
+      animation: fadeUp 0.8s 0.2s ease both;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeUp 0.8s 0.3s ease both;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--violet);
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 30px var(--violet-alpha-ring);
+    }
+    .btn-primary:hover {
+      background: var(--violet-bright);
+      transform: translateY(-2px);
+      box-shadow: 0 0 50px rgba(139,92,246,0.4);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+    .btn-ghost:hover {
+      border-color: var(--violet-bright);
+      color: var(--text);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      justify-content: center;
+      margin-top: 80px;
+      animation: fadeUp 0.8s 0.4s ease both;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--text);
+      display: block;
+      letter-spacing: -0.04em;
+    }
+    .stat-num span { color: var(--violet-bright); }
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* ─── SECTION BASE ─── */
+    section { padding: 100px 24px; }
+    .container { max-width: 1100px; margin: 0 auto; }
+
+    .section-label {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--violet-bright);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 1.5px;
+      background: var(--violet-bright);
+    }
+
+    .section-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+    .section-title em { font-style: italic; color: var(--violet-glow); }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 520px;
+      line-height: 1.75;
+      font-weight: 300;
+    }
+
+    /* ─── SERVICES ─── */
+    #services { background: var(--bg); }
+
+    .services-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 64px;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 40px 36px;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+      cursor: default;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at top left, var(--violet-alpha-sm) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .service-card:hover { border-color: var(--violet-alpha-hover); transform: translateY(-4px); }
+    .service-card:hover::before { opacity: 1; }
+
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--violet-alpha-md);
+      border: 1px solid var(--violet-alpha-border);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+      font-size: 1.5rem;
+    }
+
+    .service-num {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--text-dim);
+      letter-spacing: 0.1em;
+    }
+
+    .service-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+
+    .service-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.7;
+      font-weight: 300;
+      margin-bottom: 24px;
+    }
+
+    .service-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .service-features li {
+      font-size: 0.825rem;
+      color: var(--text-dim);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .service-features li::before {
+      content: '';
+      width: 4px; height: 4px;
+      background: var(--violet-bright);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ─── PORTFOLIO ─── */
+    #portfolio { background: var(--bg2); }
+
+    .portfolio-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .portfolio-header .section-label { justify-content: center; }
+    .portfolio-header .section-label::before { display: none; }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .portfolio-card {
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+      cursor: default;
+    }
+    .portfolio-card:hover { border-color: var(--violet-alpha-hover); transform: translateY(-4px); }
+    .portfolio-card.wide { grid-column: span 2; }
+
+    .portfolio-thumb {
+      height: 240px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .portfolio-card.wide .portfolio-thumb { height: 300px; }
+
+    .thumb-bg-1 {
+      background: linear-gradient(135deg, #0d0d1f 0%, #1a0a30 50%, #0f0818 100%);
+    }
+    .thumb-bg-2 {
+      background: linear-gradient(135deg, #0a1020 0%, #0e1e38 50%, #091020 100%);
+    }
+    .thumb-bg-3 {
+      background: linear-gradient(135deg, #120820 0%, #1e0a32 50%, #100618 100%);
+    }
+
+    .thumb-mockup {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Browser mockup */
+    .browser-mock {
+      width: 340px;
+      background: #1a1a2e;
+      border-radius: 10px;
+      border: 1px solid var(--white-alpha-xl);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.6);
+      overflow: hidden;
+    }
+    .browser-bar {
+      background: #111126;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border-bottom: 1px solid var(--white-alpha-md);
+    }
+    .browser-dots { display: flex; gap: 5px; }
+    .browser-dots span {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+    }
+    .browser-url {
+      flex: 1;
+      background: var(--white-alpha-sm);
+      border-radius: 4px;
+      height: 18px;
+      margin-left: 8px;
+    }
+    .browser-content {
+      padding: 20px;
+      min-height: 130px;
+    }
+
+    /* Phone mockup */
+    .phone-mock {
+      width: 120px;
+      background: #1a1a2e;
+      border-radius: 20px;
+      border: 1.5px solid rgba(255,255,255,0.1);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.7);
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .phone-notch {
+      width: 40px; height: 6px;
+      background: var(--white-alpha-xl);
+      border-radius: 3px;
+      margin: 8px auto 10px;
+    }
+    .phone-content { padding: 0 10px 16px; }
+
+    /* Mockup content blocks */
+    .mock-hero-block {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .mock-line {
+      height: 8px;
+      border-radius: 4px;
+      background: var(--white-alpha-lg);
+    }
+    .mock-line.accent { background: rgba(124,58,237,0.5); }
+    .mock-line.short { width: 50%; }
+    .mock-line.medium { width: 75%; }
+    .mock-line.full { width: 100%; }
+    .mock-line.thin { height: 5px; }
+    .mock-btn {
+      height: 22px;
+      width: 70px;
+      background: rgba(124,58,237,0.6);
+      border-radius: 20px;
+      margin-top: 4px;
+    }
+    .mock-card-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .mock-card {
+      flex: 1;
+      height: 40px;
+      background: var(--white-alpha-sm);
+      border-radius: 6px;
+      border: 1px solid var(--white-alpha-md);
+    }
+    .mock-img-block {
+      height: 60px;
+      background: linear-gradient(135deg, var(--violet-alpha-border), rgba(139,92,246,0.08));
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+    .mock-hearts {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      margin-bottom: 8px;
+      font-size: 0.7rem;
+    }
+
+    .portfolio-info { padding: 28px 32px; }
+    .portfolio-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--violet-bright);
+      background: rgba(124,58,237,0.1);
+      border: 1px solid var(--violet-alpha-border);
+      border-radius: 100px;
+      padding: 4px 12px;
+      margin-bottom: 14px;
+    }
+    .portfolio-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+    .portfolio-desc {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    /* ─── PROCESS ─── */
+    #process { background: var(--bg); }
+
+    .process-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .process-steps { display: flex; flex-direction: column; gap: 0; }
+
+    .process-step {
+      display: flex;
+      gap: 24px;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border-subtle);
+      position: relative;
+    }
+    .process-step:last-child { border-bottom: none; }
+
+    .step-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--violet-bright);
+      letter-spacing: 0.1em;
+      min-width: 32px;
+      padding-top: 2px;
+    }
+    .step-body {}
+    .step-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .step-desc {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      font-weight: 300;
+    }
+
+    .process-visual {
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 48px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .process-visual::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%);
+    }
+    .pv-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.8rem;
+      font-style: italic;
+      color: var(--violet-glow);
+      margin-bottom: 8px;
+    }
+    .pv-sub {
+      font-size: 0.875rem;
+      color: var(--text-dim);
+      margin-bottom: 36px;
+    }
+    .pv-items { display: flex; flex-direction: column; gap: 16px; }
+    .pv-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      background: var(--white-alpha-xs);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+    }
+    .pv-icon {
+      min-width: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pv-text { font-size: 0.875rem; color: var(--text-muted); font-weight: 400; }
+    .pv-text strong { color: var(--text); font-weight: 600; display: block; font-size: 0.825rem; }
+
+    /* ─── TESTIMONIALS ─── */
+    #testimonials { background: var(--bg2); }
+
+    .testi-header { text-align: center; margin-bottom: 64px; }
+    .testi-header .section-label { justify-content: center; }
+    .testi-header .section-label::before { display: none; }
+
+    .testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .testi-card {
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .testi-card:hover { border-color: var(--violet-alpha-ring); transform: translateY(-3px); }
+
+    .testi-stars { display: flex; gap: 4px; }
+    .testi-stars svg { display: inline-block; }
+
+    .testi-quote {
+      font-family: 'Instrument Serif', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      line-height: 1.65;
+      color: var(--text);
+      flex: 1;
+    }
+
+    .testi-person { display: flex; align-items: center; gap: 14px; }
+    .testi-avatar {
+      width: 42px; height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--violet-dim), var(--violet-bright));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .testi-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      display: block;
+    }
+    .testi-role {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+    }
+
+    /* ─── ABOUT ─── */
+    #about { background: var(--bg); }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+    }
+    .about-card {
+      background: var(--surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 48px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-card::before {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -60px;
+      width: 250px; height: 250px;
+      background: radial-gradient(circle, var(--violet-alpha-md) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .about-name-big {
+      font-family: 'Instrument Serif', serif;
+      font-size: 3.5rem;
+      font-style: italic;
+      color: var(--violet-glow);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .about-handle {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      letter-spacing: 0.08em;
+      margin-bottom: 32px;
+    }
+    .about-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .chip {
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 100px;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      background: var(--white-alpha-xs);
+    }
+    .chip.active {
+      border-color: rgba(124,58,237,0.35);
+      color: var(--violet-glow);
+      background: var(--violet-alpha-sm);
+    }
+    .about-divider {
+      height: 1px;
+      background: var(--border-subtle);
+      margin: 28px 0;
+    }
+    .about-mini-stat {
+      display: flex;
+      justify-content: space-between;
+    }
+    .mini-s {
+      text-align: center;
+    }
+    .mini-s-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.04em;
+    }
+    .mini-s-num span { color: var(--violet-bright); }
+    .mini-s-label {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .about-content {}
+    .about-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 24px;
+    }
+    .about-title em { font-style: italic; color: var(--violet-glow); }
+    .about-text {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.8;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+    .about-text:last-of-type { margin-bottom: 36px; }
+
+    .about-values {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .about-val {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 20px;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.02);
+    }
+    .val-icon { min-width: 22px; display: flex; align-items: center; padding-top: 2px; }
+    .val-text {}
+    .val-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .val-desc {
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-weight: 300;
+    }
+
+    /* ─── CONTACT ─── */
+    #contact {
+      background: var(--bg2);
+      text-align: center;
+    }
+
+    .contact-inner { max-width: 640px; margin: 0 auto; }
+    .contact-title {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 20px;
+    }
+    .contact-title em { font-style: italic; color: var(--violet-glow); }
+    .contact-sub {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+
+    .contact-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25d366;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: opacity 0.2s, transform 0.2s;
+      box-shadow: 0 0 30px rgba(37,211,102,0.25);
+    }
+    .btn-wa:hover { opacity: 0.9; transform: translateY(-2px); }
+
+    .btn-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 100px;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+    .btn-email:hover { border-color: var(--violet-bright); color: var(--text); transform: translateY(-2px); }
+
+    .contact-note {
+      font-size: 0.825rem;
+      color: var(--text-dim);
+    }
+    .contact-note span { color: var(--violet-glow); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      padding: 32px 48px;
+      border-top: 1px solid var(--border-subtle);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .footer-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      letter-spacing: -0.02em;
+    }
+    .footer-logo span { color: var(--violet-bright); }
+    .footer-copy { font-size: 0.8rem; color: var(--text-dim); }
+
+    /* ─── ANIMATIONS ─── */
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ─── RESPONSIVE ─── */
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      z-index: calc(var(--z-nav) + 1);
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text-muted);
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    @media (max-width: 900px) {
+      nav { padding: 16px 24px; }
+      .nav-hamburger { display: flex; }
+      .nav-links {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(8,8,16,0.97);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        z-index: var(--z-nav);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { font-size: 1.5rem !important; color: var(--text) !important; }
+      .services-grid { grid-template-columns: 1fr; }
+      .portfolio-grid { grid-template-columns: 1fr; }
+      .portfolio-card.wide { grid-column: auto; }
+      .process-inner { grid-template-columns: 1fr; gap: 48px; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .about-inner { grid-template-columns: 1fr; gap: 48px; }
+      .hero-stats { gap: 32px; }
+    }
+  </style>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "name": "byprayuda",
+        "url": "https://byprayuda.com",
+        "description": "Jasa pembuatan website company profile, landing page, dan undangan pernikahan digital di Semarang.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Semarang",
+          "addressRegion": "Jawa Tengah",
+          "addressCountry": "ID"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "availableLanguage": "Indonesian"
+        },
+        "sameAs": [],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Layanan Website",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Website Company Profile",
+                "description": "Pembuatan website company profile profesional untuk bisnis dan perusahaan"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Landing Page",
+                "description": "Pembuatan landing page konversi tinggi untuk produk dan layanan"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Undangan Pernikahan Digital",
+                "description": "Pembuatan website undangan pernikahan digital yang elegan dan interaktif"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Prayuda",
+        "url": "https://byprayuda.com",
+        "jobTitle": "Web Developer & Designer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Semarang",
+          "addressRegion": "Jawa Tengah",
+          "addressCountry": "ID"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">by<span>prayuda</span></a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Buka menu navigasi" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Layanan</a></li>
+      <li><a href="#portfolio">Portofolio</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#contact" class="nav-cta">Hubungi Saya</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow-2"></div>
+
+    <div class="hero-badge">
+      <span class="hero-badge-dot"></span>
+      Tersedia untuk proyek baru
+    </div>
+
+    <h1 class="hero-h1">
+      Website yang <em>bekerja</em><br/>bukan sekadar terlihat bagus
+    </h1>
+
+    <p class="hero-sub">
+      Saya membuat website company profile, landing page, dan undangan pernikahan digital
+      yang profesional, cepat, dan benar-benar bisa menggerakkan bisnis kamu.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#portfolio" class="btn-primary">
+        Lihat Portofolio
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#contact" class="btn-ghost">
+        Diskusi Proyek
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12v8a1 1 0 01-1 1H3a1 1 0 01-1-1V4zm0 0l6 5 6-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num">20<span>+</span></span>
+        <span class="stat-label">Proyek Selesai</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">Jenis Layanan</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100<span>%</span></span>
+        <span class="stat-label">Kepuasan Klien</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="services-header">
+        <div>
+          <div class="section-label">Apa yang saya tawarkan</div>
+          <h2 class="section-title">Tiga layanan,<br/><em>satu tujuan</em></h2>
+        </div>
+        <p class="section-desc">
+          Setiap website yang saya buat punya tujuan yang jelas — bukan sekadar tampil di browser, tapi berfungsi untuk bisnis dan momen pentingmu.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg></div>
+          <div class="service-num">01</div>
+          <div class="service-title">Company Profile</div>
+          <p class="service-desc">Website resmi perusahaanmu — tampil profesional di depan calon klien, mitra, dan investor.</p>
+          <ul class="service-features">
+            <li>Desain modern & responsif</li>
+            <li>Halaman profil, layanan & kontak</li>
+            <li>Optimasi kecepatan loading</li>
+            <li>SEO-ready dari awal</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
+          <div class="service-num">02</div>
+          <div class="service-title">Landing Page</div>
+          <p class="service-desc">Halaman fokus satu tujuan — konversi pengunjung jadi pelanggan, peserta, atau lead bisnismu.</p>
+          <ul class="service-features">
+            <li>Copywriting & layout persuasif</li>
+            <li>Call-to-action yang kuat</li>
+            <li>Integrasi WhatsApp & form</li>
+            <li>A/B-ready structure</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <div class="service-num">03</div>
+          <div class="service-title">Undangan Pernikahan</div>
+          <p class="service-desc">Undangan digital elegan yang bisa dibagikan lewat WhatsApp — kesan pertama yang tak terlupakan.</p>
+          <ul class="service-features">
+            <li>Desain eksklusif per pasangan</li>
+            <li>Countdown & konfirmasi hadir</li>
+            <li>Google Maps terintegrasi</li>
+            <li>Galeri foto & musik</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="portfolio-header reveal">
+        <div class="section-label">Karya terpilih</div>
+        <h2 class="section-title">Portofolio</h2>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Company Profile -->
+        <div class="portfolio-card wide reveal">
+          <div class="portfolio-thumb thumb-bg-1">
+            <div class="thumb-mockup">
+              <div class="browser-mock">
+                <div class="browser-bar">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <div class="browser-url"></div>
+                </div>
+                <div class="browser-content">
+                  <div class="mock-hero-block">
+                    <div class="mock-line accent medium"></div>
+                    <div class="mock-line short thin"></div>
+                    <div class="mock-line thin"></div>
+                    <div class="mock-line medium thin"></div>
+                    <div class="mock-btn"></div>
+                  </div>
+                  <div class="mock-card-row">
+                    <div class="mock-card"></div>
+                    <div class="mock-card"></div>
+                    <div class="mock-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Company Profile</span>
+            <div class="portfolio-name">PT. Maju Bersama — Corporate Website</div>
+            <p class="portfolio-desc">Website perusahaan jasa konstruksi dengan tampilan profesional, portofolio proyek, dan sistem kontak terintegrasi. Meningkatkan kredibilitas di depan klien korporat.</p>
+          </div>
+        </div>
+
+        <!-- Landing Page -->
+        <div class="portfolio-card reveal">
+          <div class="portfolio-thumb thumb-bg-2">
+            <div class="thumb-mockup">
+              <div class="browser-mock" style="width:260px">
+                <div class="browser-bar">
+                  <div class="browser-dots"><span></span><span></span><span></span></div>
+                  <div class="browser-url"></div>
+                </div>
+                <div class="browser-content">
+                  <div class="mock-hero-block">
+                    <div class="mock-line accent short"></div>
+                    <div class="mock-line full thin"></div>
+                    <div class="mock-line medium thin"></div>
+                    <div class="mock-btn"></div>
+                  </div>
+                  <div class="mock-card-row">
+                    <div class="mock-card" style="height:30px"></div>
+                    <div class="mock-card" style="height:30px"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Landing Page</span>
+            <div class="portfolio-name">Kelas Online — Conversion Page</div>
+            <p class="portfolio-desc">Landing page produk digital dengan struktur persuasif dan CTA terarah.</p>
+          </div>
+        </div>
+
+        <!-- Wedding -->
+        <div class="portfolio-card reveal">
+          <div class="portfolio-thumb thumb-bg-3">
+            <div class="thumb-mockup">
+              <div class="phone-mock">
+                <div class="phone-notch"></div>
+                <div class="phone-content">
+                  <div class="mock-hearts"><svg width="10" height="10" viewBox="0 0 24 24" fill="#a78bfa" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><svg width="10" height="10" viewBox="0 0 24 24" fill="#a78bfa" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+                  <div class="mock-img-block"></div>
+                  <div class="mock-line accent medium thin" style="margin-bottom:5px"></div>
+                  <div class="mock-line short thin" style="margin: 0 auto 8px; background:rgba(255,255,255,0.05)"></div>
+                  <div class="mock-btn" style="margin: 0 auto; width:80px; height:18px; background:rgba(167,139,250,0.4)"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">Undangan Pernikahan</span>
+            <div class="portfolio-name">Rizky & Safira — Digital Invitation</div>
+            <p class="portfolio-desc">Undangan digital dengan galeri, countdown, dan RSVP interaktif yang dibagikan via WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="container">
+      <div class="process-inner">
+        <div>
+          <div class="section-label reveal">Cara kerja saya</div>
+          <h2 class="section-title reveal">Proses yang<br/><em>sederhana</em></h2>
+          <p class="section-desc reveal" style="margin-bottom: 48px;">Tidak ribet, tidak berbelit. Dari brief sampai website jadi, kita kerja bareng dengan komunikasi yang jelas.</p>
+
+          <div class="process-steps">
+            <div class="process-step reveal">
+              <div class="step-num">01</div>
+              <div class="step-body">
+                <div class="step-title">Diskusi & Brief</div>
+                <p class="step-desc">Kita ngobrol santai — apa yang kamu butuhkan, siapa audiensmu, dan bagaimana hasilnya harus terasa.</p>
+              </div>
+            </div>
+            <div class="process-step reveal">
+              <div class="step-num">02</div>
+              <div class="step-body">
+                <div class="step-title">Desain & Revisi</div>
+                <p class="step-desc">Saya kirim mockup desain. Kamu bebas memberi masukan. Revisi sampai kamu puas.</p>
+              </div>
+            </div>
+            <div class="process-step reveal">
+              <div class="step-num">03</div>
+              <div class="step-body">
+                <div class="step-title">Pengembangan</div>
+                <p class="step-desc">Desain dibangun jadi website nyata — cepat, responsif, dan siap dipakai.</p>
+              </div>
+            </div>
+            <div class="process-step reveal">
+              <div class="step-num">04</div>
+              <div class="step-body">
+                <div class="step-title">Launch & Support</div>
+                <p class="step-desc">Website tayang. Saya pastikan semua berjalan lancar dan kamu bisa menggunakannya dengan percaya diri.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-visual reveal">
+          <div class="pv-title">Mengapa klien<br/>memilih saya?</div>
+          <div class="pv-sub">Bukan hanya soal desain</div>
+          <div class="pv-items">
+            <div class="pv-item">
+              <div class="pv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+              <div class="pv-text">
+                <strong>Proses Cepat & Tepat</strong>
+                Estimasi waktu jelas sejak awal. Tidak ada molor tanpa alasan.
+              </div>
+            </div>
+            <div class="pv-item">
+              <div class="pv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <div class="pv-text">
+                <strong>Komunikasi Responsif</strong>
+                Kamu selalu tahu progress proyekmu. Tidak perlu nunggu lama untuk dapat update.
+              </div>
+            </div>
+            <div class="pv-item">
+              <div class="pv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+              <div class="pv-text">
+                <strong>Mobile-First by Default</strong>
+                Semua website tampil sempurna di HP — karena mayoritas pengunjungmu pakai HP.
+              </div>
+            </div>
+            <div class="pv-item">
+              <div class="pv-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+              <div class="pv-text">
+                <strong>Desain Punya Tujuan</strong>
+                Setiap elemen ada alasannya — bukan sekadar estetika, tapi mendorong action.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="testi-header reveal">
+        <div class="section-label">Kata klien</div>
+        <h2 class="section-title">Mereka <em>sudah merasakan</em><br/>perbedaannya</h2>
+      </div>
+
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="testi-quote">"Website company profile kami sekarang jauh lebih profesional. Banyak calon klien yang bilang mereka terkesan sebelum meeting."</div>
+          <div class="testi-person">
+            <div class="testi-avatar">AR</div>
+            <div>
+              <span class="testi-name">Ahmad R.</span>
+              <span class="testi-role">Direktur, CV. Maju Jaya</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="testi-quote">"Landing page-nya simpel tapi efektif banget. Dalam seminggu pertama langsung ada yang daftar kelas saya via form di situ."</div>
+          <div class="testi-person">
+            <div class="testi-avatar">DN</div>
+            <div>
+              <span class="testi-name">Dina N.</span>
+              <span class="testi-role">Content Creator & Educator</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-stars">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="testi-quote">"Undangan digitalnya cantik banget. Banyak tamu yang tanya itu bikin sendiri atau beli template. Ternyata bikin sama Yuda, hehe."</div>
+          <div class="testi-person">
+            <div class="testi-avatar">FS</div>
+            <div>
+              <span class="testi-name">Fira & Sandi</span>
+              <span class="testi-role">Pasangan Pengantin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-visual reveal">
+          <div class="about-card">
+            <div class="about-name-big">Yuda</div>
+            <div class="about-handle">@byprayuda · Semarang, Jawa Tengah</div>
+            <div class="about-chips">
+              <span class="chip active">Web Developer</span>
+              <span class="chip active">UI Designer</span>
+              <span class="chip">Company Profile</span>
+              <span class="chip">Landing Page</span>
+              <span class="chip">Undangan Digital</span>
+              <span class="chip">HTML/CSS/JS</span>
+            </div>
+            <div class="about-divider"></div>
+            <div class="about-mini-stat">
+              <div class="mini-s">
+                <div class="mini-s-num">20<span>+</span></div>
+                <div class="mini-s-label">Proyek</div>
+              </div>
+              <div class="mini-s">
+                <div class="mini-s-num">3<span>+</span></div>
+                <div class="mini-s-label">Tahun</div>
+              </div>
+              <div class="mini-s">
+                <div class="mini-s-num">100<span>%</span></div>
+                <div class="mini-s-label">Klien Puas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <div class="section-label">Tentang saya</div>
+          <h2 class="about-title">Saya percaya website<br/>yang baik <em>punya jiwa</em></h2>
+          <p class="about-text">
+            Halo, saya Prayuda — web developer dan designer dari Semarang yang fokus membantu bisnis dan individu tampil profesional di dunia digital.
+          </p>
+          <p class="about-text">
+            Perjalanan saya dimulai dari ketertarikan mendalam pada desain dan teknologi. Sekarang, saya menggabungkan keduanya untuk membuat website yang tidak hanya cantik dipandang, tapi juga punya tujuan yang jelas dan bisa diukur hasilnya.
+          </p>
+          <p class="about-text">
+            Dari company profile perusahaan yang perlu kesan pertama yang kuat, hingga undangan pernikahan digital yang jadi kenangan indah — saya ada untuk membantu momen-momen penting itu tampil sempurna.
+          </p>
+
+          <div class="about-values">
+            <div class="about-val">
+              <div class="val-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="#a78bfa" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+              <div class="val-text">
+                <div class="val-title">Detail yang saya jaga sendiri</div>
+                <div class="val-desc">Setiap pixel, setiap kata, setiap interaksi — saya kerjakan dengan teliti sampai hasilnya benar-benar layak untuk ditampilkan.</div>
+              </div>
+            </div>
+            <div class="about-val">
+              <div class="val-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="#a78bfa" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+              <div class="val-text">
+                <div class="val-title">Klien adalah mitra, bukan sekadar pelanggan</div>
+                <div class="val-desc">Saya bekerja bareng kamu, bukan untuk kamu. Prosesnya transparan dan komunikasinya manusiawi.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="reveal">
+          <div class="section-label" style="justify-content:center">
+            <span style="display:none"></span>
+            Mulai sekarang
+          </div>
+          <h2 class="contact-title">Punya proyek<br/>dalam <em>pikiran</em>?</h2>
+          <p class="contact-sub">
+            Ceritakan kebutuhanmu. Konsultasi awal gratis — tanpa tekanan, tanpa komitmen.
+            Kita cari solusi terbaik bersama.
+          </p>
+          <div class="contact-buttons">
+            <a href="https://wa.me/62895350846090?text=Halo%20Yuda,%20saya%20ingin%20diskusi%20tentang%20proyek%20website" class="btn-wa" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Chat via WhatsApp
+            </a>
+            <a href="mailto:prayuda040305@gmail.com" class="btn-email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              Kirim Email
+            </a>
+          </div>
+          <div class="contact-note">
+            Biasanya saya membalas dalam <span>kurang dari 24 jam</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">by<span>prayuda</span></div>
+    <div class="footer-copy">© 2025 byprayuda. Dibuat dengan teliti di Semarang.</div>
+  </footer>
+
+  <script>
+    // Cursor ring follower
+    const ring = document.getElementById('cursorRing');
+    let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0, rafId = null;
+    document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; }, { passive: true });
+    function animateRing() {
+      ringX += (mouseX - ringX) * 0.12;
+      ringY += (mouseY - ringY) * 0.12;
+      ring.style.left = ringX + 'px';
+      ring.style.top = ringY + 'px';
+      rafId = requestAnimationFrame(animateRing);
+    }
+    rafId = animateRing();
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) { cancelAnimationFrame(rafId); }
+      else { rafId = animateRing(); }
+    });
+
+    // Mobile menu
+    const hamburger = document.getElementById('navHamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    // Close on link click
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Nav scroll effect
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        nav.style.borderBottomColor = 'rgba(124,58,237,0.15)';
+      } else {
+        nav.style.borderBottomColor = 'rgba(255,255,255,0.06)';
+      }
+    }, { passive: true });
+  </script>
+</body>
+</html>
