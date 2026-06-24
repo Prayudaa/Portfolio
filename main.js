@@ -6,23 +6,6 @@
    - Nav scroll effect
    ============================================================= */
 
-// Cursor ring follower
-    const ring = document.getElementById('cursorRing');
-    let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0, rafId = null;
-    document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; }, { passive: true });
-    function animateRing() {
-      ringX += (mouseX - ringX) * 0.12;
-      ringY += (mouseY - ringY) * 0.12;
-      ring.style.left = ringX + 'px';
-      ring.style.top = ringY + 'px';
-      rafId = requestAnimationFrame(animateRing);
-    }
-    rafId = animateRing();
-    document.addEventListener('visibilitychange', () => {
-      if (document.hidden) { cancelAnimationFrame(rafId); }
-      else { rafId = animateRing(); }
-    });
-
     // Mobile menu
     const hamburger = document.getElementById('navHamburger');
     const navLinks = document.getElementById('navLinks');

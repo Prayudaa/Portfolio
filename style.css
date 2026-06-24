@@ -23,7 +23,7 @@
     :root {
       --z-grain: 1000;
       --z-nav: 900;
-      --z-cursor-ring: 9998;
+
       --bg: #080810;
       --bg2: #0d0d1a;
       --surface: #111122;
@@ -68,21 +68,7 @@
       overflow-x: hidden;
       }
 
-    /* Custom cursor ring */
-    .cursor-ring {
-      position: fixed;
-      width: 36px;
-      height: 36px;
-      border: 1.5px solid rgba(139,92,246,0.5);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: var(--z-cursor-ring);
-      transform: translate(-50%, -50%);
-      transition: width 0.35s ease, height 0.35s ease, border-color 0.3s;
-    }
-    body:has(a:hover) .cursor-ring,
-    body:has(button:hover) .cursor-ring { width: 54px; height: 54px; border-color: var(--violet-bright); }
-    @media (hover: none) { .cursor-ring { display: none; } }
+
 
     /* Focus visible for keyboard nav */
     :focus-visible {
