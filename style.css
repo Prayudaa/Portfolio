@@ -36,22 +36,24 @@
       --text-muted: #9090b0;
       --text-dim: #7878aa;
       --border: rgba(124, 58, 237, 0.18);
-      --border-subtle: var(--white-alpha-border);
       --radius: 16px;
       --radius-sm: 8px;
-      /* Semantic color tokens */
-      --violet-alpha-sm: var(--violet-alpha-sm);
-      --violet-alpha-md: var(--violet-alpha-md);
-      --violet-alpha-border: var(--violet-alpha-border);
-      --violet-alpha-ring: var(--violet-alpha-ring);
-      --violet-alpha-hover: var(--violet-alpha-hover);
-      --white-alpha-xs: var(--white-alpha-xs);
-      --white-alpha-sm: var(--white-alpha-sm);
-      --white-alpha-md: var(--white-alpha-md);
-      --white-alpha-border: var(--white-alpha-border);
-      --white-alpha-lg: var(--white-alpha-lg);
-      --white-alpha-xl: var(--white-alpha-xl);
-      --green-live: var(--green-live);
+      /* Semantic color tokens — violet alpha scale */
+      --violet-alpha-sm:     rgba(124, 58, 237, 0.08);
+      --violet-alpha-md:     rgba(124, 58, 237, 0.15);
+      --violet-alpha-border: rgba(124, 58, 237, 0.25);
+      --violet-alpha-ring:   rgba(124, 58, 237, 0.35);
+      --violet-alpha-hover:  rgba(124, 58, 237, 0.30);
+      /* Semantic color tokens — white alpha scale */
+      --white-alpha-xs:      rgba(255, 255, 255, 0.03);
+      --white-alpha-sm:      rgba(255, 255, 255, 0.06);
+      --white-alpha-md:      rgba(255, 255, 255, 0.10);
+      --white-alpha-border:  rgba(255, 255, 255, 0.08);
+      --white-alpha-lg:      rgba(255, 255, 255, 0.15);
+      --white-alpha-xl:      rgba(255, 255, 255, 0.20);
+      /* Derived tokens — must come after dependencies above */
+      --border-subtle: var(--white-alpha-border);
+      --green-live: #22c55e;
       --white: #ffffff;
     }
 
