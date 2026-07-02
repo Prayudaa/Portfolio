@@ -17,10 +17,10 @@
       ring.style.top = ringY + 'px';
       rafId = requestAnimationFrame(animateRing);
     }
-    rafId = animateRing();
+    animateRing();
     document.addEventListener('visibilitychange', () => {
       if (document.hidden) { cancelAnimationFrame(rafId); }
-      else { rafId = animateRing(); }
+      else { animateRing(); }
     });
 
     // Mobile menu

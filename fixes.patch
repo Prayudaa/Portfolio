@@ -1,0 +1,30 @@
+diff --git a/index.html b/index.html
+index 02dd8c7..75a6278 100644
+--- a/index.html
++++ b/index.html
+@@ -3,7 +3,7 @@
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; frame-ancestors 'none';" />
++  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self'; img-src 'self' data:; connect-src 'none'; frame-ancestors 'none';" />
+   <meta name="referrer" content="strict-origin-when-cross-origin" />
+   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+   <!-- Open Graph -->
+diff --git a/main.js b/main.js
+index c575580..27bfec9 100644
+--- a/main.js
++++ b/main.js
+@@ -17,10 +17,10 @@
+       ring.style.top = ringY + 'px';
+       rafId = requestAnimationFrame(animateRing);
+     }
+-    rafId = animateRing();
++    animateRing();
+     document.addEventListener('visibilitychange', () => {
+       if (document.hidden) { cancelAnimationFrame(rafId); }
+-      else { rafId = animateRing(); }
++      else { animateRing(); }
+     });
+ 
+     // Mobile menu
